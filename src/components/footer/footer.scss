@@ -1,0 +1,256 @@
+@import '../../styles/variables.scss';
+
+.footer__content {
+  width: $desktop_content_width;
+  margin: 0 auto;
+
+  ul {
+    text-align: right;
+    margin-top: 19px;
+  }
+
+  a {
+    color: $footer_link_color;
+  }
+
+  h2 {
+    font-weight: 500;
+    font-size: 18px;
+  }
+}
+
+.footer__related-products {
+  padding-top: 57px;
+  min-height: 434px;
+  background-color: $bg_related_products_color;
+
+  .footer__related-products-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+  }
+
+  .footer__related-products-item {
+    width: 265px;
+    height: 280px;
+    position: relative;
+
+    &--poufs {
+      background: linear-gradient((0deg, rgba(19, 35, 55, 0.7) 0%, rgba(19, 35, 55, 0) 22.32%), rgba(19, 35, 55, 0.1)), url("./images/poufs.jpg");
+    }
+
+    &--tables {
+      background: linear-gradient((0deg, rgba(19, 35, 55, 0.7) 0%, rgba(19, 35, 55, 0) 22.32%), rgba(19, 35, 55, 0.1)), url("./images/tables.jpg");
+    }
+
+    &--toppers {
+      background: linear-gradient((0deg, rgba(19, 35, 55, 0.7) 0%, rgba(19, 35, 55, 0) 22.32%), rgba(19, 35, 55, 0.1)), url("./images/toppers.jpg");
+    }
+
+    &--chairs {
+      background: linear-gradient((0deg, rgba(19, 35, 55, 0.7) 0%, rgba(19, 35, 55, 0) 22.32%), rgba(19, 35, 55, 0.1)), url("./images/chairs.jpg");
+    }
+  }
+
+
+
+  h3 {
+    position: absolute;
+    bottom: 0;
+    color: $bg_main_color;
+    width: 48%;
+    text-align: left;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: normal;
+    margin-left: 20px;
+    margin-bottom: 15px;
+
+    &:hover {
+      color: darken($bg_main_color, 20%);
+    }
+
+    &:active {
+      color: darken($bg_main_color, 20%);
+    }
+  }
+
+  p {
+    position: absolute;
+    bottom: 0;
+    color: $bg_main_color;
+    right: 0;
+    width: 50%;
+    text-align: right;
+    margin-right: 19px;
+    margin-bottom: 15px;
+
+    &:hover {
+      color: darken($bg_main_color, 20%);
+    }
+
+    &:active {
+      color: darken($bg_main_color, 20%);
+    }
+  }
+}
+
+.footer__info {
+  min-height: 342px;
+  background-color: $footer_color;
+
+  .footer__content {
+    display: grid;
+    grid-template-columns: 34% 66%;
+    padding-top: 34px;
+  }
+}
+
+.footer__menu {
+  display: grid;
+    grid-template-columns: 35.4% 26% 38.6%;
+    padding-top: 20px;
+}
+
+.footer__contacts {
+  width: 275px;
+  color: $bg_main_color;
+
+  a {
+    color: $firm_color;
+
+    &:hover {
+      color: darken($firm_color, 10%);
+    }
+
+    &:active {
+      color: darken($firm_color, 10%);
+    }
+  }
+
+  .footer__logo {
+    margin-bottom: 23px;
+  }
+
+  .footer__tel {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 900;
+    font-size: 18px;
+    width: fit-content;
+  }
+
+  h3 {
+    color: $footer_contacts_color;
+    margin-bottom: 36px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  h4 {
+    font-weight: 500;
+  }
+}
+
+.footer__links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+
+  a {
+    color: $bg_main_color;
+  }
+}
+
+.footer__link {
+  display: block;
+  min-height: 32px;
+  min-width: 62px;
+  border-radius: 4px;
+  background-color: $footer_social_bg_color;
+  padding: 0 15px;
+  padding-top: 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &:hover {
+    background-color: darken($footer_social_bg_color, 5%);
+  }
+
+  &:active {
+    background-color: darken($footer_social_bg_color, 5%);
+  }
+}
+
+.footer__link--vk {
+  background-image: url('./images/vk_icon.svg');
+}
+
+.footer__link--instagramm {
+  background-image: url('./images/instagramm_icon.svg');
+}
+
+.footer__about-item a,
+.footer__rooms-item a,
+.footer__catalog-item a {
+  color: $footer_link_color;
+
+  &:hover {
+    color: lighten($footer_link_color, 20%);
+  }
+
+  &:active {
+    color: lighten($footer_link_color, 20%);
+  }
+}
+
+.footer__about-item,
+.footer__rooms-item,
+.footer__catalog-item {
+  margin-bottom: 5PX;
+}
+
+.footer__about-item:first-child,
+.footer__rooms-item:first-child,
+.footer__catalog-item:first-child {
+  color: $footer_list_title_color;
+  margin-bottom: 5PX;
+}
+
+.footer__credits {
+  display: flex;
+  min-height: 58px;
+  background-color: $footer_credits_color;
+
+  .footer__content {
+    display: flex;
+    align-items: center;
+    color: $footer_link_color;
+  }
+
+  .footer__credits-link {
+    margin-left: 26px;
+    position: relative;
+
+
+    &:hover {
+      color: darken($footer_link_color, 5%);
+    }
+
+    &:active {
+      color: darken($footer_link_color, 5%);
+    }
+  }
+
+  .footer__credits-link::before {
+    content: "·";
+    position: absolute;
+    left: -15px;
+    cursor: default;
+  }
+
+  .footer__credits-logo-link {
+    display: block;
+    margin-left: auto;
+  }
+}

@@ -1,0 +1,73 @@
+@import 'fonts.scss';
+@import 'normalize.css';
+@import 'variables.scss';
+@import '../components/header/header.scss';
+@import '../components/main/main.scss';
+@import '../components/footer/footer.scss';
+
+#root {
+  font-family: "Exo 2", "Tahoma", sans-serif;
+  color: $general_text_color;
+  font-size: $general_font_size;
+  min-width: 1120px;
+};
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
